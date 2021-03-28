@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img:hover{
+				border: #FF0000 30px solid;
+				box-sizing: border-box;
+				border-image: url(img/china.png) 50 50 round;
+			}
+			ul{
+				list-style-type: none;
+			}
+			ul>li>a[href$="doc"]::before{
+				content: url(img/word.png);
+				
+			}
+			ul>li>a[href$="ppt"]::before{
+				content: url(img/ppt.png);
+				
+			}
+			ul>li>a[href$="pdf"]::before{
+				content: url(img/pdf.png);
+				
+			}
+			ul>li>a::after{
+				content: "点击此处下载文件";
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/fish.jpg" width="300px" height="180px">
+		</div>
+		<hr />
+		<ul>
+			<li><a href="xxx.doc">文件的名字</a></li>
+			<li><a href="xxx.ppt">文件的名字</a></li>
+			<li><a href="xxx.doc">文件的名字</a></li>
+			<li><a href="xxx.pdf">文件的名字</a></li>
+			<li><a href="xxx.doc">文件的名字</a></li>
+		</ul>
+	</body>
+</html>
