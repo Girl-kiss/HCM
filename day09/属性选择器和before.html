@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul{
+				list-style-type: none;
+			}
+			ul>li>a[href$="doc"]::before{
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border: #000000 1px solid;
+				background-image: url(img/word.png);
+				background-size: cover;
+			}
+			ul>li>a[href$="ppt"]::before{
+				content: url(img/ppt.png);
+				
+			}
+			ul>li>a[href$="pdf"]::before{
+				content: url(img/pdf.png);
+				
+			}
+			ul>li>a::after{
+				content: "点击此处下载文件";
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="xxx.doc">文件的名字</a></li>
+			<li><a href="xxx.ppt">文件的名字</a></li>
+			<li><a href="xxx.doc">文件的名字</a></li>
+			<li><a href="xxx.pdf">文件的名字</a></li>
+			<li><a href="xxx.doc">文件的名字</a></li>
+		</ul>
+	</body>
+</html>
